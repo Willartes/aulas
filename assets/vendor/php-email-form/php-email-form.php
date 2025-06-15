@@ -114,11 +114,49 @@ class PHP_Email_Form {
     }
 
     if( $this->ajax ) {
-      if( !isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
+      if( !isset($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
         return $this->error_msg['ajax_error'];
       }
     }
 
+
+/*
+    if( $this->ajax ) {
+        $isAjaxRequest = false;
+        
+        // Verificar múltiplas formas de detectar AJAX
+        if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && 
+            strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest') {
+            $isAjaxRequest = true;
+        }
+        
+        // Verificar se veio de fetch/XMLHttpRequest (cabeçalhos adicionais)
+        if (isset($_SERVER['HTTP_ACCEPT']) && 
+            strpos($_SERVER['HTTP_ACCEPT'], 'application/json') !== false) {
+            $isAjaxRequest = true;
+        }
+        
+        // Verificar se é POST
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            $isAjaxRequest = false;
+        }
+        
+        // Método alternativo: verificar se não há referer de formulário normal
+        if (!$isAjaxRequest && isset($_SERVER['HTTP_REFERER'])) {
+            // Se veio do mesmo domínio via JavaScript, provavelmente é AJAX
+            $currentDomain = $_SERVER['HTTP_HOST'];
+            $refererDomain = parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST);
+            if ($currentDomain === $refererDomain) {
+            $isAjaxRequest = true;
+            }
+        }
+        
+        if (!$isAjaxRequest) {
+            return $this->error_msg['ajax_error'];
+        }
+    }
+
+*/
     $to = filter_var( $this->to, FILTER_VALIDATE_EMAIL);
     $from_name = filter_var( $this->from_name, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $from_email = filter_var( $this->from_email, FILTER_VALIDATE_EMAIL);

@@ -103,11 +103,11 @@
                     </label>
                     <input type="number" class="form-control" id="captcha" name="captcha" required placeholder="Digite o resultado">
                     <input type="hidden" id="captcha-answer" name="captcha-answer">
-                    
-                    <div class="loading">Carregando</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
-                    
+                    <div class="my-3">
+                      <div class="loading">Carregando</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
+                  </div>
                     <button type="submit">Enviar</button>
                 </form>
             </article>
@@ -203,9 +203,10 @@
             <p>&copy; 2025 Aulasparticulares. Todos os direitos reservados.</p>
         </section>
     </footer>
+    
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/captcha.js"></script>
-    <script src="assets/js/form-validation.js"></script>
+    <script src="assets/vendor/php-email-form/validate2.js"></script>
 </body>
 </html>
