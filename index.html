@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulasparticulares</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <figure class="logo">
+                <img src="assets/images/logo.png" alt="Logo Aulasparticulares">
+            </figure>
+            <h1>Aulasparticulares</h1>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#professores">Professores</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-banner">
+            <article class="hero-content">
+                <h2>CURSOS E AULAS PARTICULARES</h2>
+                <h3>MATEMÁTICA APRENDA CONOSCO!</h3>
+                <p>Transforme seu aprendizado em uma experiência única com nossos cursos e aulas particulares. Prepare-se para os desafios com nossas aulas presenciais e online. Venha aprender conosco!</p>
+                <a href="#contato" class="cta-button">Consultar Aulas </a>
+            </article>
+        </section>
+
+        <section class="academic-success">
+            <article class="success-content">
+                <h2>Aulas particulares com professores altamente qualificados para o seu sucesso acadêmico!</h2>
+                <p>Descubra o caminho para o sucesso acadêmico com aulas particulares personalizadas de Matemática. Nossa abordagem individualizada ajuda você a alcançar seus objetivos de aprendizado.</p>
+                <a href="#contato" class="saiba-mais-button">Saiba Mais</a>
+            </article>
+            <figure class="teacher-illustration">
+                <img src="assets/images/teacher-character.png" alt="Professor especializado em ensino">
+            </figure>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <header class="faq-header">
+                <h2>AINDA TEM DÚVIDAS?</h2>
+            </header>
+
+            <article class="faq-item">
+                <h3>Como são as aulas particulares oferecidas?</h3>
+                <p>As aulas particulares são personalizadas e adaptadas às necessidades de cada aluno, conduzidas por professores altamente qualificados.</p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Qual a diferença entre a revisão de conteúdos e as aulas particulares?</h3>
+                <p>A revisão de conteúdos é ideal para reforço do conhecimento, enquanto as aulas particulares são mais abrangentes, focando no desenvolvimento geral do estudante.</p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Como a preparação para vestibulares e concursos é abordada nas aulas particulares?</h3>
+                <p>A preparação inclui simulados, resolução de questões e acompanhamento personalizado para garantir o sucesso do aluno.</p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Os professores possuem qualificações específicas?</h3>
+                <p>Sim, ambos os professores são altamente qualificados, com experiência comprovada em matemática.</p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Como é feito o acompanhamento individual dos alunos?</h3>
+                <p>O acompanhamento individual é personalizado, com feedback constante e acompanhamento do progresso do estudante.</p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Quais são as vantagens de escolher as aulas particulares para meu aprendizado?</h3>
+                <p>A oportunidade de aprendizado eficiente através de aulas personalizadas e metodologia de ensino comprovada.</p>
+            </article>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <article class="contact-form">
+                <form  action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <label for="nome">Nome*</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                    
+                    <label for="email">E-mail*</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" class="form-control" id="phone" name="phone">
+                    
+                    <label for="assunto">Assunto*</label>
+                    <input type="text" class="form-control" id="subject" name="subject" required>
+                    
+                    <label for="mensagem">Mensagem*</label>
+                    <textarea id="message"  class="form-control" name="message" rows="10" required></textarea>
+                    
+                    <label for="captcha">
+                        Resolva a operação: <span id="captcha-question"></span> = ?
+                    </label>
+                    <input type="number" class="form-control" id="captcha" name="captcha" required placeholder="Digite o resultado">
+                    <input type="hidden" id="captcha-answer" name="captcha-answer">
+                    
+                    <div class="loading">Carregando</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+            <article class="contact-info">
+                <header>
+                    <h2>CONTATO</h2>
+                </header>
+                <address class="contact-details">
+                    <p class="email-contact">
+                        <strong>E-mail:</strong>
+                        <a href="mailto:eduardo.collet153@gmail.com">Eduardo Colle</a>
+                    </p>
+                    <p class="phone-contact">
+                        <strong>Telefone:</strong>
+                        <a href="tel:11975776812">(11) 97577-6812</a>
+                    </p>
+                </address>
+            </article>
+        </section>
+
+        <section id="professores" class="professors-section">
+          <header class="section-header">
+              <h2>CONHEÇA NOSSOS PROFESSORES</h2>
+              <p>Transforme seu aprendizado com aulas personalizadas e acompanhamento individual.</p>
+          </header>
+          
+          <!-- Adicione este div container -->
+          <div class="professors-grid">
+              <article class="professor-card">
+                  <figure class="professor-image">
+                      <img src="assets/img/jose-eduardo.jpg" alt="Professor José Eduardo Colle">
+                  </figure>
+                  <header class="professor-info">
+                      <h3>José Eduardo Colle</h3>
+                  </header>
+                  <p>Professor com mais de 30 anos de experiência, licenciado pela USP e mestre pela UABRC.</p>
+                  <p>Atende Ensino Fundamental II, Médio e Superior, com ampla vivência em escolas tradicionais e universidades.</p>
+                  <p>Resultados comprovados, confiança construída com alunos e famílias.</p>
+                  <a href="#contato" class="contact-professor">FALE CONOSCO</a>
+              </article>
+              
+              <article class="professor-card">
+                  <figure class="professor-image">
+                      <img src="assets/img/william-rodrigues.jpg" alt="Professor William Rodrigues da Silva">
+                  </figure>
+                  <header class="professor-info">
+                      <h3>William Rodrigues da Silva</h3>
+                  </header>
+                  <p>Experiência comprovada no ensino de Matemática e Física para o Ensino Fundamental II e Ensino Médio.</p>
+                  <p>Expertise em ministrar aulas particulares para alunos do Ensino Fundamental, Médio, com abordagens personalizadas.</p>
+                  <a href="#contato" class="contact-professor">FALE CONOSCO</a>
+              </article>
+          </div>
+      </section>
+
+    </main>
+
+    <footer>
+        <section class="footer-content">
+            <header class="footer-header">
+                <h2>Aulasparticulares</h2>
+                <p class="footer-subjects">MATEMÁTICA, FÍSICA, QUÍMICA</p>
+                <p class="footer-cta">ATENDIMENTO JÁ!</p>
+            </header>
+            
+            <article class="footer-contact">
+              <div class="whatsapp-float">
+                <a href="https://wa.me/5511975776812?text=Olá! Gostaria de mais informações sobre as aulas particulares." target="_blank" class="whatsapp-button">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="white">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                    </svg>
+                    <span class="whatsapp-tooltip">Fale conosco no WhatsApp</span>
+                </a>
+            </div>
+
+                <a href="https://wa.me/5511975776812?text=Olá! Gostaria de mais informações sobre as aulas particulares." target="_blank" class="whatsapp-button">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="white">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                    </svg>
+                    <span class="whatsapp-tooltip">Fale conosco no WhatsApp</span>
+                </a>
+            </article>
+
+            <article class="footer-info">
+                <address>
+                    <p>E-mail: <a href="mailto:eduardo.collet153@gmail.com">eduardo.collet153@gmail.com</a></p>
+                    <p>Telefone: <a href="tel:11975776812">(11) 97577-6812</a></p>
+                </address>
+            </article>
+        </section>
+
+        <section class="footer-bottom">
+            <p>&copy; 2025 Aulasparticulares. Todos os direitos reservados.</p>
+        </section>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/captcha.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+</body>
+</html>
