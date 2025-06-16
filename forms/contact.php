@@ -12,9 +12,9 @@
   ini_set('default_charset', 'UTF-8');
 
 
-// Configurações de erro e timezone
-  $receiving_email_address = 'willartes@gmail.com';
-
+ // Configurações de erro e timezone
+  $receiving_email_address = 'jecolle@gmail.com';
+  
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
   } else {
@@ -37,11 +37,20 @@
 
   $contact->smtp = array(
       'host' => 'smtp.gmail.com',
-      'username' => 'willartes@gmail.com',
-      'password' => 'vapn refr bqow augd',
-      'port' => '587'
+      //'username' => 'willartes@gmail.com',
+      'username' => 'jecolle@gmail.com',
+      'password' => 'cupo hdwi gxsg loxg',
+      //'password' => 'vapn refr bqow augd',
+      'SMTPSecure' => PHPMailer::ENCRYPTION_STARTTLS,
+      'port' => 587,
+      'SMTPAuth' => true, // Garantir autenticação
+      'CharSet' => 'UTF-8' // Para caracteres especiais
+      
   );
 
+  // Adicionar múltiplos destinatários
+  // Testar se funciona com emails separados por vírgula
+  
   $contact->add_message($_POST['name'], 'Nome');
   $contact->add_message($_POST['email'], 'Email');
   $contact->add_message($_POST['phone'], 'Telefone');
