@@ -10,11 +10,19 @@
 <body>
     <header>
         <nav>
-            <figure class="logo">
+            <a href="#home" class="logo">
                 <img src="assets/images/logo.png" alt="Logo Aulasparticulares">
-            </figure>
-            <h1>Aulasparticulares</h1>
-            <ul class="nav-menu">
+                <h1>Aulasparticulares</h1>
+            </a>
+            
+            <!-- Adicione esta div para a mensagem deslizante -->
+            <div class="header-message">
+                <span>Transforme seu aprendizado em uma experiência única com nossas aulas particulares!</span>
+            </div>
+            
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#professores">Professores</a></li>
                 <li><a href="#faq">FAQ</a></li>
@@ -22,6 +30,8 @@
             </ul>
         </nav>
     </header>
+
+
 
     <main>
         <section id="home" class="hero-banner">
@@ -47,9 +57,7 @@
         </section>
 
         <section id="faq" class="faq-section">
-            <header class="faq-header">
-                <h2>VAMOS JUNTOS MELHORAR SEU CONHECIMENTO EM EXATAS?</h2>
-            </header>
+            
 
             <article class="faq-item">
                 <h3>Como são as aulas particulares oferecidas?</h3>
@@ -185,8 +193,10 @@
             </article>
             <article class="footer-info">
                 <address>
-                    <p>E-mail: <a href="mailto:jecolle@gmail.com">jecolle@gmail.com</a></p>
-                    <p>Telefone: <a href="tel:11975776812">(11) 97577-6812</a></p>
+                    
+                        <p>E-mail: <a href="mailto:jecolle@gmail.com">jecolle@gmail.com</a></p>
+                        <p>Telefone: <a href="tel:11975776812">(11) 97577-6812</a></p>
+                    
                 </address>
             </article>
         </section>
